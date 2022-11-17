@@ -49,7 +49,7 @@ for work_name in work_names[:5]:
     work_name_list.append(work_name.text)
 
 for i in range(5):
-    cur.execute(f"insert into jobs values({i},'{com_name_list[i]}','{work_name_list[i]}','{com_logo_list[i]}','{work_link_list[i]}')")
+    cur.execute(f"insert into jobs values({i},'{work}','{com_name_list[i]}','{work_name_list[i]}','{com_logo_list[i]}','{work_link_list[i]}')")
 
 conn.commit()
 conn.close()
